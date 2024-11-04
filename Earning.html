@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IDigitalPreneur Dashboard</title>
+    <link rel="stylesheet" href="Earning.css">
+    <link rel="icon" href="https://www.idigitalpreneur.com/assets/frontend/images/fav-icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/all.min.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/style.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/dashboard_external.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/qualification.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/qualification_b.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/kyc.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/certificate.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/courses.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/video-page.css">
+    <link rel="stylesheet" href="https://idigitalpreneur.com/assets/useradmin/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://idigitalpreneur.com/assets/build/snow3d.js"></script>-->
+    <script src="https://idigitalpreneur.com/assets/admin/js/dev-mode-block.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/useradmin/css/bootstrap-datetimepicker.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    
+      
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</head>
+<body>
+  <header class="gre_bck text-white">
+    <!-- mobile view -->
+    <div class="top-sty sticky-top">
+      <div class="row justify-content-center align-items-center d-flex">
+        <div class="col-xl-2 col-lg-2 col-sm-6 col-6">
+          <a href="#" class="abt-srt">
+            <div class="mob-log">
+            <a href="https://idigitalpreneur.com/"><img src="https://idpdefault.s3.ap-south-1.amazonaws.com/143165b78d1481b4f7820240129170340.jpg" class="img-fluid" alt=""></a>
+              <!-- <a href="https://idigitalpreneur.com/"><img src="https://idpdefault.s3.ap-south-1.amazonaws.com/623064d9b8c359c492520230814104651.jpg" class="img-fluid" alt=""></a> -->
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-sm-4 col-4">
+          <div id="slide_toggle">
+            <div class="slimy"></div>
+          </div>
+          <div id="slidebar">
+            <ul>
+              <li><a href="https://idigitalpreneur.com/" class="">Home</a></li>
+              <li><a href="https://idigitalpreneur.com/dashboard-home" class="">Dashboard</a></li>
+              <li><a href="https://idigitalpreneur.com/dashboard-open-courses" class="">Courses</a></li>
+              <!-- <li><a href="https://idigitalpreneur.com/dashboard-eduvince-course" class="">Eduvince</a></li> -->
+            </ul>
+          </div>
+        </div>
+                <div class="col-xl-6 col-lg-6 col-sm-2 col-2">
+          <div class="li_sty_img dropdown">
+            <a href="" data-bs-toggle="dropdown">
+                            <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/709063dd03e641c258920230203182358.jpg" class="img-fluid" alt="">
+            </a>
+            <ul class="dropdown-menu right20">
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/profile" class="">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span>My Profile</span>
+                    </div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/dashboard-open-courses" class="">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span> My Courses</span>
+                    </div>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/quiz" class="">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span> Certificate</span>
+                    </div>
+                  </div>
+                </a></li>
+              <li>
+                                        <a class="dropdown-item" id="" href="https://idigitalpreneur.com/affiliate-panel" class="">
+                                                                      <div class="row">
+                          <div class="col-3 p-0">
+                            <i class="fa-solid fa-users"></i>
+                          </div>
+                          <div class="col-9 p-0">
+                            <span> Affiliate Panel</span>
+                          </div>
+                        </div>
+                        </a>
+              </li>
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/choose-plan" class="">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa-shopping-cart"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span> Upgrade Plan</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/freelance">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span>Freelance</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" id="social-media-mobile-popup">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa fa-external-link"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span> Social Media</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!-- <li><a class="dropdown-item" target="_blank" href="https://idigitalpreneur.com/download-pdf">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fas fa-file-pdf"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span>Guideline PDF</span>
+                    </div>
+                  </div>
+                </a>
+              </li> -->
+              <!--<li><a class="dropdown-item"  href="#"><i class="fa-solid fa-headphones"></i> Social Media</a></li> -->
+              <li><a class="dropdown-item" href="https://idigitalpreneur.com/user-logout">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span>Logout</span>
+                    </div>
+                  </div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile view -->
+
+    <div class="row mob-n" id="myheadm">
+      <div class="col-xl-2 col-lg-2 col-sm-2 col-2">
+        <a href="https://idigitalpreneur.com/" class="abt-srt">
+          <div class="img-logo">
+          <!-- <a href="https://idigitalpreneur.com/"><img src="https://idpdefault.s3.ap-south-1.amazonaws.com/623064d9b8c359c492520230814104651.jpg" class="img-fluid" alt=""></a> -->
+            <a href="https://idigitalpreneur.com/"><img src="https://idpdefault.s3.ap-south-1.amazonaws.com/143165b78d1481b4f7820240129170340.jpg" width="140px" alt=""></a>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-sm-4 col-4">
+        <div class="abt-top-text">
+          <p>Hello! Revanuru Maharshi </p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
+        <div class="nav-area text-end">
+          <ul>
+            <li><a href="https://idigitalpreneur.com/" class="">Home</a></li>
+            <li><a href="https://idigitalpreneur.com/dashboard-home" class="">Dashboard</a></li>
+            <li><a href="https://idigitalpreneur.com/dashboard-open-courses" class="">Courses</a></li>
+            <!-- <li><a href="https://idigitalpreneur.com/dashboard-eduvince-course" class="">Eduvince</a></li> -->
+            <li class="li_sty_img dropdown">
+              <a href="#" class="widthForImg" data-bs-toggle="dropdown">
+                                <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/709063dd03e641c258920230203182358.jpg" class="img-fluid" alt="">
+              </a>
+              <ul class="dropdown-menu right20">
+                <li><a class="dropdown-item " href="https://idigitalpreneur.com/profile">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <svg class="svg-inline--fa fa-user" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                          <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path>
+                        </svg>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span>My Profile</span>
+                      </div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item " href="https://idigitalpreneur.com/dashboard-open-courses">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span> My Courses</span>
+                      </div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item " href="https://idigitalpreneur.com/quiz">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fa-solid fa-certificate"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span>Certificate</span>
+                      </div>
+                    </div>
+                  </a></li>
+                <li>
+                                            <a class="dropdown-item " href="https://idigitalpreneur.com/affiliate-panel">
+                                                                            <div class="row">
+                            <div class="col-3 p-0">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="col-9 p-0">
+                              <span> Affiliate Panel</span>
+                            </div>
+                          </div>
+                          </a>
+                </li>
+                <li><a class="dropdown-item " href="https://idigitalpreneur.com/choose-plan">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span> Upgrade Plan</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li><a class="dropdown-item" href="https://idigitalpreneur.com/freelance">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span>Freelance</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li><a class="dropdown-item " id="social-media-popup" href="#">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fa-solid fa fa-external-link"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span> Social Media</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- <li><a class="dropdown-item" target="_blank" href="https://idigitalpreneur.com/download-pdf">
+                  <div class="row">
+                    <div class="col-3 p-0">
+                      <i class="fa-solid fas fa-file-pdf"></i>
+                    </div>
+                    <div class="col-9 p-0">
+                      <span>Guideline PDF</span>
+                    </div>
+                  </div>
+                </a>
+              </li> -->
+                <li><a class="dropdown-item" href="https://idigitalpreneur.com/user-logout">
+                    <div class="row">
+                      <div class="col-3 p-0">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                      </div>
+                      <div class="col-9 p-0">
+                        <span>Logout</span>
+                      </div>
+                    </div>
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-head">
+      <div class="mt-5">
+        <div class="row">
+          <hr class="hr-mob">
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-7">
+            <div class="abt-top-text">
+              <p>Hello, Revanuru Maharshi !</p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-2 col-1"></div>
+          <div class="col-xl-4 col-lg-4 col-sm-4 col-4">
+            <div class="text-end btnmrg10">
+              <button type="button" class="btn" id="mytoggle">&#9776; Menu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="social-media-modal">
+    <div class="modal fade" id="my-affiliate-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="btn-close"></div>
+        <div class="modal-content-wrapper">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-4 col-12 mt-4 text-center">
+                <a href="https://www.facebook.com/groups/idigitalpreneurcommunity/" target="_blank;" class="button-9_social" style="background-color: #3b5998;"><span class="fab fa-facebook-f icon"></span>Facebook</a>
+              </div>
+              <div class="col-md-4 col-12 mt-4 text-center">
+                <a href="https://www.instagram.com/idigitalpreneur/" target="_blank;" class="button-9_social" style="background: #405DE6; background: linear-gradient(to right, #405DE6, #833ab4);"><span class="fab fa-instagram icon"></span>Instagram</a>
+              </div>
+              <div class="col-md-4 col-12 mt-4 text-center">
+                <a href="https://www.youtube.com/c/IDigitalPreneur" target="_blank;" class="button-9_social" style="background-color: #FF0000;"><span class="fab fa-youtube icon"></span>Youtube</a>
+              </div>
+              <div class="col-md-6 col-12 mt-4 text-center">
+                <a href="https://bit.ly/3JG3jI4" target="_blank;" class="button-9_social" style="background-color: #0088cc;"><span class="fab fa-telegram icon"></span>Telegram Hindi</a>
+              </div>
+              <div class="col-md-6 col-12 mt-4 text-center">
+                <a href="https://t.me/+cctqDqFz1O43YmZl" target="_blank;" class="button-9_social" style="background-color: #0088cc;"><span class="fab fa-telegram icon"></span>Telegram English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- open popup for access -->
+
+  <div class="open-acessble-modal">
+    <div class="modal fade " id="my-affiliate-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       
+        <div class="modal-content-wrapper position-relative mob_modal overflow-hidden h-auto">
+        <div class="btn-close"></div>
+          <div class="modal-content">
+            <form action="https://idigitalpreneur.com/home/idp/becomeafiliate" method="post">
+              <!-- ======= -->
+              <div class="table-responsive d-flex justify-content-center mt-3">
+                <table class="table table-bordered table-striped mw-90">
+                  <tbody>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td><span>Revanuru Maharshi</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Phone</b></td>
+                      <td><span>9948273636</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Email</b></td>
+                      <td><span>leadermaharshi@gmail.com</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- ======= -->
+              <!-- <div class="content-class mt-3">
+                <p>An affiliate is a person who promotes products of IDigitalPreneur in return for a commission on the sale.
+                  Affiliates who work with IDigitalPreneur earn commissions on every package referral.</p>
+                <p>We have 5 packages, and their commission is as follows:</p>
+                <ul>
+                  <li>Standard Package- Rs. 1000/-</li>
+                  <li>Elite Package- Rs.2000/-</li>
+                  <li>Pro Package- Rs. 4000/-</li>
+                  <li>Supreme Package- Rs. 7000/-</li>
+                  <li>Finance Premium- Rs. 10,000/-</li>
+                </ul>
+
+                <p></p>
+
+              </div> -->
+              <div class="content-class mt-3 gap-4  my-3">
+                <div class="formVideowraper">
+                  <div class="video-section-right">
+                    <iframe class="video-cover" width="100%" src="https://player.vimeo.com/video/917466267?h=4fa28cf93e"
+                      title="video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+              <div div class="form-group">
+                <input type="checkbox" name="check" id="term-and-condition" value="1">
+                <samll> &nbsp;&nbsp;By clicking, you agree to the <a href="https://www.idigitalpreneur.com/terms-conditions">terms and conditions</a> to be an Affiliate of the IDigitalPreneur Community.</samll>
+              </div>
+              <div class="buttun-group">
+                <button type="button" class="submit-btn edit-btn">Close</button>
+                <button type="submit" class="submit-btn submit-btn-none">Submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="affiliate-panel-india" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="float: right;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            <p>As of now, this feature is functional only in India.We are building it for you too.Stay Tuned.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myslidebar" class="mysl">
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ 
+ 
+ 
+      <li class="nav-item">
+ 
+        <a href="https://idigitalpreneur.com/affiliate-panel" class="nav-link  " aria-current="page" href="#">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <!--<img src="https://idigitalpreneur.com/assets/useradmin/dashboard/icons/dashboard.png" height="40px" width="40px" alt=""> -->
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_DASHBOARD.png" class="wdth40" alt="">
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Dashboard</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+      <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/offers" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/3387648fe7f8124d31520230619110032.jpg" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Offers</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/achievements" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/5266651697a3e5f594820230929145347.jpg" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Achievements</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+      <!-- <li class="nav-item ">
+ 
+        <a href="https://idigitalpreneur.com/freelance" class="nav-link " aria-current="page" href="#">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/freelancing_freelancing.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">
+ 
+                Freelance</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li> -->
+ 
+      <li class="nav-item blur">
+        <a href="https://idigitalpreneur.com/mkt-tools" class="nav-link ">
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_MARKETING TOOL.png" class="wdth40" alt="">
+ 
+            </div>
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10"> Marketing Tools</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+      </li>
+ 
+      <li class="nav-item">
+ 
+        <a href="https://idigitalpreneur.com/affiliate-trainning" class="nav-link  ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_TRAINING.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Training</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/webinar" class="nav-link  ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_WEBINAR.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Webinar</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+ 
+      <li class="nav-item blur lock">
+ 
+        <a href="https://idigitalpreneur.com/affiliate-kyc" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_KYC.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10 mr-auto">KYC</p>
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                         </div>
+ 
+          </div>
+ 
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/orientation_link_generator" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_LINK.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Link Generator</p>
+ 
+            </div>
+ 
+          </div>
+ 
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/orientation_link_tracker" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_VIDEO ORIENTION.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Leads Tracker</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/reffral-details" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_REFFERAL DETAIL.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Referral Details</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/dashboard-qualification" class="nav-link  ">
+        <!-- <a href="https://idigitalpreneur.com/dashboard-qualification" class="nav-link  "> -->
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_qualification.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Qualifications</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/passive-income" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_PASSIVE INCOME.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Passive Income</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item">
+ 
+        <a href="https://idigitalpreneur.com/dashboard-earning" class="nav-link active">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_EARNING.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Earning</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item blur">
+ 
+        <a href="https://idigitalpreneur.com/payout-details" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_PAYOUT.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Payout Details</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+      <li class="nav-item">
+ 
+        <a href="https://idigitalpreneur.com/dashboard-leaderboard" class="nav-link ">
+ 
+          <div class="row brsty_row">
+ 
+            <div class="col-2">
+ 
+              <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_LEADERBAORD.png" class="wdth40" alt="">
+ 
+            </div>
+ 
+            <div class="col-10 align-items-center d-flex">
+ 
+              <p class="mrg10">Leaderboard</p>
+ 
+            </div>
+ 
+          </div>
+        </a>
+ 
+      </li>
+ 
+    </ul>
+ 
+  </div>
+ 
+  <!-- Mobile Nav End -->
+ 
+  <!-- desk area -->
+  <div class="area-de mt120">
+
+    <nav class="navbar sidenav navbar-expand-sm" id="mySidenav">
+ 
+     
+      <div class="container-fluid-sty">
+ 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 
+          <span class="navbar-toggler-icon"></span>
+ 
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ 
+ 
+ 
+            <li class="nav-item ">
+ 
+              <a href="https://idigitalpreneur.com/affiliate-panel" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_DASHBOARD.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Dashboard</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/offers" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/3387648fe7f8124d31520230619110032.jpg" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Offers</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li> 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/achievements" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/5266651697a3e5f594820230929145347.jpg" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Achievements</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+            <!-- <li class="nav-item ">
+ 
+              <a href="https://idigitalpreneur.com/freelance" class="nav-link " aria-current="page" href="#">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/freelancing_freelancing.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Freelance</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li> -->
+ 
+            <li class="nav-item blur">
+              <a href="https://idigitalpreneur.com/mkt-tools" class="nav-link ">
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_MARKETING TOOL.png" class="wdth40" alt="">
+ 
+                  </div>
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10"> Marketing Tools</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+            </li>
+ 
+            <li class="nav-item ">
+ 
+              <a href="https://idigitalpreneur.com/affiliate-trainning" class="nav-link  ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_TRAINING.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Training</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/webinar" class="nav-link  ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_WEBINAR.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Webinar</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+ 
+            <li class="nav-item blur lock">
+ 
+              <a href="https://idigitalpreneur.com/affiliate-kyc" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_KYC.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                  <p class="mrg10 mr-auto">KYC</p>
+                                               <i class="fa fa-lock" aria-hidden="true"></i>
+                   
+                  </div>
+ 
+                </div>
+ 
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/orientation_link_generator" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_LINK.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Link Generator</p>
+ 
+                  </div>
+ 
+                </div>
+ 
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/orientation_link_tracker" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_VIDEO ORIENTION.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Leads Tracker</p>
+ 
+                  </div>
+ 
+                </div>
+ 
+              </a>
+ 
+ 
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/reffral-details" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_REFFERAL DETAIL.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">
+ 
+                      Referral Details</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/dashboard-qualification" class="nav-link  ">
+              <!-- <a href="https://idigitalpreneur.com/dashboard-qualification" class="nav-link  "> -->
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_qualification.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Qualification</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/passive-income" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_PASSIVE INCOME.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Passive Income</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item ">
+ 
+              <a href="https://idigitalpreneur.com/dashboard-earning" class="nav-link active">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_EARNING.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Earning</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item blur">
+ 
+              <a href="https://idigitalpreneur.com/payout-details" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_PAYOUT.png" class="wdth40" alt="">
+ 
+                  </div>
+ 
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10">Payout Details</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+            <li class="nav-item ">
+ 
+              <a href="https://idigitalpreneur.com/dashboard-leaderboard" class="nav-link ">
+ 
+                <div class="row brsty_row">
+ 
+                  <div class="col-2">
+ 
+                    <img src="https://idigitalpreneur.com/assets/useradmin/dashboardicon/NEW ICON_LEADERBAORD.png" class="wdth40" alt="">
+ 
+                  </div>
+                  <div class="col-10 align-items-center d-flex">
+ 
+                    <p class="mrg10"> Leaderboard</p>
+ 
+                  </div>
+ 
+                </div>
+              </a>
+ 
+            </li>
+ 
+          </ul>
+ 
+ 
+ 
+        </div>
+ 
+      </div>
+ 
+    </nav>
+ 
+  </div>
+ <div class="toastt">  
+     <div class="toast-content">
+         <div class="toast_img  d-flex align-items-center">
+             <img src="" alt="" style="width: 70px; height:70px;border-radius: 50%;" id="userimage">
+         </div>
+         <div class="message1">
+             <span class="text text-2"><span id="username"></span></span>
+             <span class="text text-2" style="padding-top: 5%;"><span id="createdon"></span></span>
+         </div>
+     </div>
+     
+     <div class="progress active"></div>
+ </div>
+ <div class="gstoastt">
+  <div class="gstoastt_b">
+    <div class="gstoast-content">
+      <div class="toast_img d-flex align-items-center">
+        <img src="" alt="" style="width: 70px; height:70px;border-radius: 50%;" id="userimagequalification">
+      </div>
+      <div class="message1">
+        <span class="text text-2" id="usernamequalification"></span>
+        <span class="text text-2 toast_mt_2" id="usercontentqualification"></span>
+        <span class="text text-2" style="padding-top: 5%;" id="createdonqualification"></span>
+      </div>
+      <div class="mess" onclick="closeToast()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-8 col-lg-8 col-sm-8">
+  <div class="back_area">
+      <div class="front_area">
+          <div class="card">
+              <div class="card-header my_ear_bg pd_ern_10">
+                  <div class="mycl d-flex justify-content-end">
+                      <div class="dropdown">
+                          <button class="btn btn-secondary calan_sty" type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <i class="fa-regular fa-calendar"></i>
+                          </button>
+                          <div class="dropdown-menu sty_drp">
+                              <form novalidate="">
+                                  <div class="form-group">
+                                      <label>From</label>
+                                      <input type="date" class="form-control" name="from"
+                                          value="">
+                                  </div>
+                                  <div class="form-group mt-4">
+                                      <label>To</label>
+                                      <input type="date" class="form-control" name="to"
+                                          value="">
+                                  </div>
+                                  <div class="form-group mt-4">
+                                      <button type="submit"
+                                          class="btn gt_cc btn-block waves-effect waves-themed">Search</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="select_dropdwon mb-4">
+                          <select name="country" id="country">
+                              <option value="">All Countries</option>
+                                                                  <option value="19">Bangladesh</option>
+                                                                  <option value="101">India</option>
+                                                                  <option value="154">Nepal</option>
+                                                                  <option value="231">United Arab Emirates</option>
+                                                          </select>
+                      </div>
+                      <div class="online_earning mb-4">
+                          <button class="form-control" id="onlineearning" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">Update Your Earnings</button>
+                      </div>
+                  </div>
+                  <ul class="mob-pl0">
+                      <li class="crd-img mob-crd-img">
+                          <div class="imt_dv">
+                              <div class="imt_dv-b">
+                                                                      <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/709063dd03e641c258920230203182358.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="crd-img-inf l_18 mob-none">
+                                  <p class="mb-0">Revanuru Maharshi</p>
+                                  <span>leadermaharshi@gmail.com</span>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <!-- mobile name section -->
+                  <div class="d-flex justify-content-center">
+                      <div class="crd-img-inf text-center mob-crd-img-inf mt_35_ern">
+                          <p class="mb-0">Revanuru Maharshi</p>
+                          <span>leadermaharshi@gmail.com</span>
+                      </div>
+                  </div>
+                  <!-- mobile name section end -->
+              </div>
+              <div class="card-body" id="card">
+                  
+                                          <div class="row" id="earningCounter">
+
+                                              <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                          <div class="abt-ern">
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-7 col-9 earing-card-section">
+                                      <p>Today's Earning</p>
+                                                                                  <h4>&#8377; 50,000/-</h4>
+                                                                          </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                          <div class="abt-ern abt-ern-ba">
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-7 col-9 earing-card-section">
+                                      <p>Last 7 Days Earnings</p>
+                                                                                  <h4>&#8377; 3,00,000/-</h4>
+                                                                          </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                          <div class="abt-ern abt-ern-bb">
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-7 col-9 earing-card-section">
+                                      <p>Last 30 Days Earnings</p>
+                                                                                  <h4>&#8377; 30,000/-</h4>
+                                                                          </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-sm-12 col-12">
+                          <div class="abt-ern abt-ern-bc">
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-7 col-9 earing-card-section">
+                                      <p>All Time Earning</p>
+                                                                                  <h4>&#8377; 90,000/-</h4>
+                                                                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!--  -->
+                  </div>
+                  <div class="row">
+                      <div class="col-xl-8 col-lg-8 col-sm-8 col-12 mt5 pb-5">
+                          <div class="abt-ern-b over_scrl hght_390 table-responsive-lg ">
+                              <div class="text-center">
+                                  <p class="fw-sty">Your Recent Referrals</p>
+                              </div>
+                              <div class="row justify-content-end">
+                                  <div class="col-md-3 col-sm-3 col-6">
+                                      <select id="countryFilter" class="form-control">
+                                          <option value="">All Countries</option>
+                                                                                          <option value="19">Bangladesh</option>
+                                                                                          <option value="101">India</option>
+                                                                                          <option value="154">Nepal</option>
+                                                                                          <option value="231">United Arab Emirates</option>
+                                                                                  </select>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-6">
+                                      <select id="packageFilter" class="form-control">
+                                          <option value="">Select Package</option>
+                                          <option value="1">Elite</option>
+                                          <option value="2">Pro</option>
+                                          <option value="3">Supreme</option>
+                                          <option value="4">Premium</option>
+                                          <option value="5">Standard</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <input type='hidden' id='sort' value='asc'>
+                              <table class="table table-responsive display responsive nowrap" id="userTable">
+                                  <thead>
+                                      <tr>
+                                          <!-- <th>Image</th> -->
+                                          <th>Name</th>
+                                          <th>Amount Earned</th>
+                                          <th>Plan Purchased</th>
+                                          <!--  <th onclick='sortTable("current_plan");' style="cursor: pointer;">
+                                          Plan Purched</th> -->
+                                          <th>Date of Joining</th>
+                                          <th>Country</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                                                          </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-sm-4 col-12 mt5 pb-5">
+                          <div class="abt-ern-b over_scrl hght_390 table-responsive-lg ">
+                              <div class="text-center">
+                                  <p class="fw-sty">State Wise Referrals</p>
+                              </div>
+                              <table class="table">
+                                  <thead>
+                                      <tr>
+                                          <th>State Name</th>
+                                          <th>Total Referrals</th>
+
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                                                          </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer Section -->
+          <div class="row pb-5">
+  <div class="col-md-6 col-sm-12 mt-4">
+      <div class="abt-ern-b row table-responsive">
+          <div class="col-9 cent">
+              <div>
+                  <h6> <strong>We are Here for You</strong> </h6>
+                  <h3><strong>1800-570-2626</strong> </h3>
+                  <p class="fs14">Monday-Saturday 9:15AM - 05:00PM </p>
+              </div>
+          </div>
+          <div class="col-3 cent">
+              <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/457063b054d66992f7720221231205718.jpg" class="img-fluid" alt="phone">
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6 col-sm-12 mt-4">
+      <div class="abt-ern-b row table-responsive">
+          <div class="col-9 cent">
+              <div>
+                  <h6> <strong>Let's Connect On</strong> </h6>
+                  <h3><strong>+91 9625136861</strong> </h3>
+                  <p class="fs14">Monday-Saturday 9:15AM - 05:00PM </p>
+              </div>
+          </div>
+          <div class="col-3 cent">
+              <img src="https://idpdefault.s3.ap-south-1.amazonaws.com/401963b054f11749f4320221231205745.jpg" class="img-fluid" alt="whatsapp">
+          </div>
+      </div>
+  </div>
+</div>            <!-- Footer End -->
+      </div>
+  </div>
+
+  <div class="modal fade mt-0 overflow-hidden" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered"> <!-- Added modal-lg here -->
+          <div class="modal-content">
+              <form method="POST" action="https://idigitalpreneur.com/online-earning-form">
+                  <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Update Your Earnings <button type="button"
+                              class="play_btn" data-bs-toggle="modal" data-bs-target="#videoModal"><i
+                                  class="far fa-play-circle"></i></button></h1>
+
+                      <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span
+                              aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                      <div id="income-inputs" class="pr-2">
+                          <div class="singleEarning">
+                              <div class="title">
+                                  <h4>Please fill your details</h4>
+                                  <!-- <button type="button" class="btn"><i class="fa-regular fa-trash-can"></i></button> -->
+                              </div>
+                              <div class="row align-items-center position-relative">
+                                  <div class="col-md-6 mb-3">
+                                      <div class="form-floating">
+                                          <input type="text" name="source[]" class="form-control" placeholder="Source"
+                                              required>
+                                          <label for="Source">Source of earning</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                      <div class="form-floating">
+                                          <input type="number" name="income[]" class="form-control"
+                                              placeholder="Income" required>
+                                          <label for="Income">Amount</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                      <div class="form-floating">
+                                          <input type="text" name="from[]" class="form-control form_datetime2"
+                                              placeholder="From Date" required>
+                                          <label for="Source">Starting Date</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                      <div class="form-floating">
+                                          <input type="text" name="to[]" class="form-control form_datetime2"
+                                              placeholder="To Date" required>
+                                          <label for="Source">End Date</label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <button type="button" class="btn addmorebutton" onclick="addInput()"><i
+                              class="fa-solid fa-plus-circle"></i> Add More</button>
+                      <!-- <button type="submit" class="btn submitbutton">Submit</button> -->
+                      <button type="submit" class="button-3" role="button">Submit</button>
+
+                  </div>
+                  <div class="modal-footer d-none">
+                      <div class="row w-100">
+                          <div class="col-6">
+                              <button type="button" class="btn btn-success btn-sm" onclick="addInput()">Add
+                                  More</button>
+                          </div>
+                          <div class="col-6">
+                              <button type="submit" class="btn btn-primary btn-sm d-block"
+                                  style="margin-left: auto">Submit</button>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade mt-0 overflow-hidden" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg_none_info">
+
+              <div class="modal-body video_area_info">
+                  <div class="close_area_btn">
+                      <iframe id="videoIframe"
+                          src="https://player.vimeo.com/video/1020111102?h=5bfc87eda6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          allowfullscreen title="IDP dashboard.mp4" frameborder="0"></iframe>
+                      <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span
+                              aria-hidden="true">×</span></button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+</div>
+<!-- desk area -->
+</div>
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+<script src="https://www.jqueryscript.net/demo/bootstrap-date-time-picker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript">
+    // $(".form_datetime").datetimepicker({
+    //   formatViewType: 'date',
+    // });
+    function initializeDateRangePicker() {
+        $(".form_datetime2").datetimepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            todayBtn: true,
+            startView: 2, // Month view
+            minView: 2, // Prevent selection of time
+            startDate: "2013-02-14"
+        });
+    }
+
+    // Call the function to initialize existing daterange inputs on page load
+    $(document).ready(function () {
+        initializeDateRangePicker();
+    });
+    // $('#datetimepicker').datetimepicker();
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="Earning.js"></script>
+
+</body>
+<script src="https://idigitalpreneur.com/assets/useradmin/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="https://idigitalpreneur.com/assets/useradmin/js/owl.carousel.min.js"></script>
+
+<!--<script src="https://idigitalpreneur.com/assets/useradmin/js/kyc-script.js"></script>-->
+
+<!--<script src="https://idigitalpreneur.com/assets/useradmin/js/kyc-slick.js"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script src="https://idigitalpreneur.com/assets/useradmin/js/all.min.js"></script>
+
+<script src="https://idigitalpreneur.com/assets/useradmin/js/script.js"></script>
+
+<script src="https://idigitalpreneur.com/assets/useradmin/js/fontawesome.min.js"></script>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script>
+
+
+</script>
+<!--<script src="https://idigitalpreneur.com/assets/useradmin/js/jQuery.js"></script>-->
+</html>
